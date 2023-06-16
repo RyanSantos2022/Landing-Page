@@ -34,15 +34,24 @@ html {
 
 body {
     background-color: #F6F5F6;
+    overflow-x: hidden;
 
 }
-
+/*Header*/
 .container{
 
     max-width: 100%;
     padding: 0 100px;
 }
 
+@media(min-width: 300px) and (max-width:820px){
+    .container{
+
+        max-width: 100%;
+        padding: 0 15px;
+
+}
+ }
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -50,52 +59,91 @@ body {
     height: 90px;
 }
 
+@media(min-width: 300px) and (max-width:820px){
+    .header .container {
+        display: flex;
+        align-items: center;
+        height: 90px;
 
 
+    }
+}
+
+/*Botão*/
 
 .botao {
-    font-family: 'cooperhewitt', medium;
+    font-family: 'cooperhewitt', normal;
     background-color: #E5695B;
     color: #F6F5F6;
-    width: 14rem;
-    height: 3rem;
+    width: 132px;
+    height: 34px;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #F6F5F6;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease-out 0.3s;
 }
 
 
 
+
+.botao:hover{
+    background-color: #F26F60;
+}
+
+/*Corpo*/
 #titulo {
-    font-family: 'bellefair', normal;
+    font-family: 'Bellefair', serif;
     font-weight: 300;
     color: #22425C;
-    font-size: 50px;
+    font-size: 6.9rem;
     text-align: center;
-    margin-top: 13rem;
+    margin-top: 100px;
+    height: 79px;
 }
 
+@media(min-width:300px) and (max-width: 820px){
+    #titulo {
+        font-family: 'Bellefair', serif;
+        font-weight: 300;
+        color: #22425C;
+        font-size: 4.0rem;
+        text-align: center;
+        margin-top: 100px;
+
+}
+}
 .ondas {
-    margin-top: 13rem;
+    margin-top: 122px;
     width: 100%;
-
 }
+
+@media(min-width:300px) and (max-width: 820px){
+    .ondas {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
+
 
 #area-azul {
     background-color: #22425C;
-    height: 24rem;
-    margin: -1rem;
+    height: 389px;
+    margin: -10px;
+
 }
+
+
 
 .conteudo {
     height: 369px;
-    width: 583px;
+    max-width: 583px;
     margin: 0 auto;
-    margin-top: -20rem;
+    margin-top: -310px;
+    width: 100%;
 }
 
 #texto {
@@ -104,16 +152,37 @@ body {
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 10px;
     text-align: left;
-    padding-top: 7rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     color: #4B535B;
-    font-size: 2rem;
+    font-size: 1.6rem;
     border: 1px solid #CACBCE;
+    line-height: 24px;
 
 }
 
+@media(min-width: 300px) and (max-width: 820px){
+    #texto {
+        font-family: 'cooperhewitt', normal;
+        background-color: white;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        color: #4B535B;
+        font-size: 1.4rem;
+        border: 1px solid #CACBCE;
+        line-height: 20px;
+    
+
+}
+}
+/*Conteudo e Imagens*/
 .conteudo-img {
     background-color: #ffffff;
     width: 100px;
@@ -139,4 +208,177 @@ body {
 
 .container-interno {
     position: relative;
+    width: 100%;
+}
+
+
+
+.img{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    object-fit: cover;
+
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    .img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        object-fit: cover;
+    
+}
+}
+
+#div-img figure:first-child .img{
+    object-position: bottom;
+}
+
+#div-img figure:last-child .img{
+    object-position: left;
+}
+
+.conteudo-img{
+    display: flex;
+    align-items: center
+}
+
+#div-img{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 78px;
+        
+}
+
+@media(min-width:300px) and (max-width:820px){
+    #div-img{
+        display:flex;
+        flex-direction: column;
+        margin-top: 10px;
+}
+}
+
+.titulos-h4{
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'cooperhewitt', normal;
+    color: #4B535B;
+    font-size: 22px;
+    
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    
+.titulos-h4{
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'cooperhewitt', normal;
+    color: #4B535B;
+    font-size: 18px;
+}
+}
+
+.textos{
+    font-family: 'cooperhewitt', normal ;
+    color: #4B535B;
+    font-size: 16px;
+    width: 339px;
+    margin-top: 15px;
+}
+@media(min-width: 300px) and (max-width: 820px){
+    .textos{
+        font-family: 'cooperhewitt', normal ;
+        color: #4B535B;
+        font-size: 16px;
+        margin-top: 15px;
+        width: auto;
+}
+}
+
+/*Div a Vida esta La fora*/
+#titulo-rodape{
+    font-size: 22px;
+    
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    #titulo-rodape{
+        font-size: 18px;
+        
+    }
+}
+
+.rodape{
+    background-color: white;
+    height: 195px;
+    margin-top: 50px;
+    color: #4B535B;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'cooperhewitt' , normal;
+    box-shadow: 0px 3px 6px #00000029
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    .rodape{
+        font-size: 14px;
+ 
+    }
+}
+
+.botao-rodape{
+    padding-top: 38px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#botao-rodape{
+    width: 206px;
+    height: 55px;
+    font-size: 2.2rem;
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    #botao-rodape{
+        width: 180px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 68px;
+    font-family: 'cooperhewitt', light;
+    color: #787878;
+    text-align: center;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+
+}
+
+#hr{
+    border: 1px solid #CACBCE;
+    margin-top: 50px;
+}
+
+.p{
+    padding-top: 15px;
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    .p{
+        padding-top: 10px;
+    }
 }
