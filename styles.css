@@ -85,9 +85,19 @@ body {
     align-items: center;
     justify-content: center;
     transition: ease-out 0.3s;
+    transition: transform 1000ms;
+}
+.botao:hover,
+.botao:focus-visible{
+    transform: translateY(-1rem);
+    transition: transform 100ms;
 }
 
 
+.botao:focus{
+    background-color: #E5695B;
+    color: #CACBCE;
+}
 
 
 .botao:hover{
@@ -103,6 +113,13 @@ body {
     text-align: center;
     margin-top: 100px;
     height: 79px;
+    animation: titulo 1.5s linear;
+}
+
+
+@keyframes titulo{
+    from{transform: translateX(500px);
+    to{transform: translateX(800px);}}
 }
 
 @media(min-width:300px) and (max-width: 820px){
@@ -119,6 +136,12 @@ body {
 .ondas {
     margin-top: 122px;
     width: 100%;
+    animation: ondas 1.5s linear;
+}
+
+@keyframes ondas{
+    from{transform: translateX(-300px);}
+    to{transform: translateX(0px);}
 }
 
 @media(min-width:300px) and (max-width: 820px){
@@ -132,12 +155,28 @@ body {
 #area-azul {
     background-color: #22425C;
     height: 389px;
-    margin: -10px;
+    margin-top: -10px;
+    animation: area-azul 1.5s linear ;
+
+}
+
+@media(min-width: 300px) and (max-width: 820px){
+    #area-azul {
+        background-color: #22425C;
+        height: 389px;
+        margin-top: -10px;
+
 
 }
 
 
+}
 
+@keyframes area-azul{
+        from{transform: translateX(-300px);}
+        to{transform: translateX(0px);}
+    }
+    
 .conteudo {
     height: 369px;
     max-width: 583px;
@@ -146,6 +185,13 @@ body {
     width: 100%;
 }
 
+@media(min-width: 300px) and (max-width: 820px){
+    .conteudo {
+        margin-top: -310px;
+        padding: 1rem 1rem 1rem 1rem;
+        max-width: 350px;
+    }
+}
 #texto {
     font-family: 'cooperhewitt', normal;
     background-color: white;
@@ -246,17 +292,18 @@ body {
 
 #div-img{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     margin-top: 78px;
         
 }
 
 @media(min-width:300px) and (max-width:820px){
-    #div-img{
+    #div-img {
         display:flex;
         flex-direction: column;
         margin-top: 10px;
+        
 }
 }
 
