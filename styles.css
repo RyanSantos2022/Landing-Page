@@ -137,6 +137,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .atividades__item {
@@ -194,13 +195,14 @@
 
 .rodape__card {
     background-color: white;
-    height: 195px;
-    margin-top: 50px;
     color: #4B535B;
     font-size: 16px;
     text-align: center;
     padding: 25px;
-    box-shadow: 0px 3px 6px #00000029
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media(min-width: 300px) and (max-width: 1000px) {

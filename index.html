@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Alta Fidelidade</title>
+    <meta name="description" content="Landing Page sobre as atividades ao ar livre">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="container">
+            <img id="logo" src="./img/logo-leme.svg" alt="Logo Leme SVG" title="Logo Leme">
+            <a class="botao" href="#">VER ATIVIDADES</a>
+        </div>
+    </header>
+
     <main>
-        <header class="header">
-            <div class="container">
-                <img id="logo" src="./img/logo-leme.svg" alt="Logo Leme SVG" title="Logo Leme">
-                <a class="botao" href="#">VER ATIVIDADES</a>
-            </div>
-        </header>
 
         <h1 id="titulo">É um lindo dia no mar!</h1>
         <img class="ondas" src="./img/ondas.svg" alt="Ondas SVG" title="Ondas">
@@ -57,7 +59,8 @@
             <div class="container">
                 <div class="atividades__item">
                     <picture>
-                        <img class="atividades__img" src="./img/mar redimensionado.jpg" alt="Nadador" title="Nadador">
+                        <source media="(min-width: 600px)" srcset="./img/nadador-desktop.jpg">
+                        <img class="atividades__img" src="./img/nadador-mobile.jpg" alt="Nadador" title="Nadador">
                     </picture>
                     <p class="atividades__titulo">ATIVIDADES</p>
                     <p class="atividades__descricao">
@@ -68,7 +71,8 @@
 
                 <div class="atividades__item">
                     <picture>
-                        <img class="atividades__img" src="./img/montanha redimensionado.jpg" alt="Montanhas"
+                        <source media="(min-width: 600px )" srcset="./img/montanhas-desktop.jpg">
+                        <img class="atividades__img" src="./img/montanhas-mobile.jpg" alt="Montanhas"
                             title="Montanhas">
                     </picture>
                     <p class="atividades__titulo">PASSEIOS</p>
@@ -79,8 +83,8 @@
 
                 <div class="atividades__item">
                     <picture>
-                        <img class="atividades__img" src="./img/basquete redimensionado.jpg" alt="Jogador de Basquere"
-                            title="Basquete">
+                        <source media="(min-width: 600px)" srcset="./img/basquete-desktop.jpg">
+                        <img class="atividades__img" src="./img/basquete-mobile.jpg" alt="Jogador de Basquete" title="Basquete">
                     </picture>
                     <p class="atividades__titulo">ESPORTES</p>
                     <p class="atividades__descricao">
@@ -106,11 +110,12 @@
 
         <hr class="divisor">
 
-        <footer>
-            <span>&copy; LEME Inteligência - Todos os direitos reservados 2023</span>
-        </footer>
-
     </main>
+
+    <footer>
+        <span>&copy; LEME Inteligência - Todos os direitos reservados 2023</span>
+    </footer>
+
 </body>
 
 
