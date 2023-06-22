@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: 'bellefair';
+    src: url('./fonte/bellefair-regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'cooperhewitt';
+    src: url('../fonte/cooperhewitt-book.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'cooperhewitt';
+    src: url('../fonte/cooperhewitt-light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'cooperhewitt';
+    src: url('./fonte/cooperhewitt-medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/*Mini FrameWork*/
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+body {
+    background-color: #F6F5F6;
+    overflow-x: hidden;
+    font-family: 'cooperhewitt';
+
+}
+
+.container{
+
+    max-width: 100%;
+    padding: 0 100px;
+}
+
+@media(min-width: 300px) and (max-width:1000px){
+    .container{
+
+        max-width: 100%;
+        padding: 0 15px;
+
+}
+ }
+
+ /*Botão*/
+
+.botao {
+    background-color: #E5695B;
+    color: #F6F5F6;
+    padding: 8px 16px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #F6F5F6;
+    transition: ease-out 0.3s;
+    transition: transform 1000ms;
+}
+.botao:hover,
+.botao:focus-visible{
+    transform: translateY(-1rem);
+    transition: transform 100ms;
+}
+
+
+.botao:focus{
+    background-color: #E5695B;
+    color: #CACBCE;
+}
+
+
+.botao:hover{
+    background-color: #F26F60;
+}
+
+.botao--big{
+    padding: 13px 25px;
+    font-size: 2.2rem;
+}

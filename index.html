@@ -6,116 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Alta Fidelidade</title>
     <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
-    </head>
+</head>
+
 <body>
+    <main>
+        <header class="header">
+            <div class="container">
+                <img id="logo" src="./img/logo-leme.svg" alt="Logo Leme SVG" title="Logo Leme">
+                <a class="botao" href="#">VER ATIVIDADES</a>
+            </div>
+        </header>
 
-    <header class="header">
-        <div class="container">
-            <img id="logo" src="./img/logo-leme.svg" alt="Logo Leme SVG" title="Logo Leme">
-           <a class="botao" href="#">VER ATIVIDADES</a>
-    </header>
-
-    <div>
         <h1 id="titulo">É um lindo dia no mar!</h1>
-    </div>
+        <img class="ondas" src="./img/ondas.svg" alt="Ondas SVG" title="Ondas">
 
-    <div>
-        <figure>
-            <img class="ondas" src="./img/ondas.svg" alt="Ondas SVG" title="Ondas">
-        </figure>
-    </div>
+        <div id="area-azul"></div>
 
-    <div id="area-azul"></div>
-
-
-    <div class="container-interno">
-
-        <div class="conteudo-img">
-            <figure>
-                <img id="praia" src="./img/praia.svg" alt="Praia SVG" title="Praia">
-            </figure>
-        </div>
-
-        <div class="conteudo">
-            <section id="texto">
-                A vida está lá fora! Neste mundo de computadores e internet muitas vezes deixamos de lado atividades ao
-                ar livre e vivemos presos em casa. Pesquisas mostram que pessoas que praticam atividades externas se
-                sentem mais felizes.<br><br>
-                Pensando na realização e na saúde de seus colaboradores a LEME está lançando a campanha <b>É um lindo
-                    dia no mar!</b> para incentivar à prática de atividades ao ar livre, à uma vida mais saudável e ao
-                compartilhamento de experiências significativas.<br><br>
-                Veja as atividades disponíveis e venha você também aproveitar um lindo dia no mar!
-            </section>
-
-        </div>
-
-    </div>
-
-    <div class="container-img">
-        <div id="div-img">
-            <div class="titulos-h4">
-                <figure>
-                    <img class="img" src="./img/mar.jpg" alt="Nadador" title="Nadador">
-                </figure>
-                <p class="p">ATIVIDADES</p>
-                <section class="textos">
-                    <p>Diversas atividades tanto para você quanto para sua familia</p>
-                </section>
-                
+        <section class="resumo">
+            <div class="resumo__icone">
+                <img src="./img/praia.svg" alt="Praia SVG" title="Praia">
             </div>
 
-            <div class="titulos-h4">
-                <figure>
-                    <img class="img" src="./img/montanhas.jpg" alt="Montanhas" title="Montanhas">
-                </figure>
-                <p class="p">PASSEIOS</p>
-                <section class="textos">
-                    <p> Passerios, viagens e trilhas pelos lugares mais belos do Brasil</p>
-                </section>
-            </div>
+            <div class="resumo__conteudo">
+                <div class="container">
 
-            <div class="titulos-h4">
-                <figure>
-                    <img class="img" src="./img/basquete.jpg" alt="Jogador de Basquere" title="Basquete">
-                </figure>
-                <p class="p">ESPORTES</p>
-                <section class="textos">
-                    <p> Prática dos seus esportes favoritos e até competições entre equipes</p>
-                </section>
-            </div>
-            
-        </div>
-    </div>
-       
-       
-    </div>
-
-    <div class="container">
-        <section  class="rodape" >
-            <p id="titulo-rodape">A VIDA ESTÁ LÁ FORA!</p>
-            <br>
-            <br>
-            <p>Não perca tempo! Comece hoje ainda uma vida mais saudável e feliz!</p>
-            <div class="botao-rodape">
-                <a class="botao" id="botao-rodape" href="#">VER ATIVIDADES</a>
+                    <p class="resumo__texto">
+                        A vida está lá fora! Neste mundo de computadores e internet muitas vezes deixamos de lado
+                        atividades ao
+                        ar livre e vivemos presos em casa. Pesquisas mostram que pessoas que praticam atividades
+                        externas se
+                        sentem mais felizes.<br><br>
+                        Pensando na realização e na saúde de seus colaboradores a LEME está lançando a campanha <b>É um
+                            lindo
+                            dia no mar!</b> para incentivar à prática de atividades ao ar livre, à uma vida mais
+                        saudável e ao
+                        compartilhamento de experiências significativas.<br><br>
+                        Veja as atividades disponíveis e venha você também aproveitar um lindo dia no mar!
+                    </p>
+                </div>
             </div>
         </section>
 
-    </div>
+        <section class="atividades">
+            <div class="container">
+                <div class="atividades__item">
+                    <picture>
+                        <img class="atividades__img" src="./img/mar redimensionado.jpg" alt="Nadador" title="Nadador">
+                    </picture>
+                    <p class="atividades__titulo">ATIVIDADES</p>
+                    <p class="atividades__descricao">
+                        Diversas atividades tanto para você quanto para sua familia
+                    </p>
+
+                </div>
+
+                <div class="atividades__item">
+                    <picture>
+                        <img class="atividades__img" src="./img/montanha redimensionado.jpg" alt="Montanhas"
+                            title="Montanhas">
+                    </picture>
+                    <p class="atividades__titulo">PASSEIOS</p>
+                    <p class="atividades__descricao">
+                        Passeios, viagens e trilhas pelos lugares mais belos do Brasil
+                    </p>
+                </div>
+
+                <div class="atividades__item">
+                    <picture>
+                        <img class="atividades__img" src="./img/basquete redimensionado.jpg" alt="Jogador de Basquere"
+                            title="Basquete">
+                    </picture>
+                    <p class="atividades__titulo">ESPORTES</p>
+                    <p class="atividades__descricao">
+                        Prática dos seus esportes favoritos e até competições entre equipes
+                    </p>
+                    </picture>
+                </div>
+            </div>
+        </section>
 
 
-    <hr id="hr">
+        <section class="rodape">
+            <div class="container">
+                <div class="rodape__card">
+                    <p class="rodape__titulo mb-50">A VIDA ESTÁ LÁ FORA!</p>
+                    <p class="rodape__descricao mb-50">
+                        Não perca tempo! Comece hoje ainda uma vida mais saudável e feliz!
+                    </p>
+                    <a class="botao botao--big" href="#">VER ATIVIDADES</a>
+                </div>
+            </div>
+        </section>
 
+        <hr class="divisor">
 
-    <div class="footer">
-    <footer>
-        <span>&copy; LEME Inteligência - Todos os direitos reservados 2023</span>
-    </footer>
-    </div>
+        <footer>
+            <span>&copy; LEME Inteligência - Todos os direitos reservados 2023</span>
+        </footer>
+
+    </main>
 </body>
 
 
